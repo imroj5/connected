@@ -9,7 +9,7 @@ public class Main {
 
         ApplicationContext context= new AnnotationConfigApplicationContext(AppConfig.class);
 OrederService orders =context.getBean(OrederService.class);
-orders.orderService();
+     orders.orederService();
 
 
     }

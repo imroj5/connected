@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class PaymentService {
 
-    public void Pay(){
-        System.out.println("payment is done");
+    public void paymentService(){
+        System.out.println("payment is successful");
     }
+
 }

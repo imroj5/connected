@@ -1,22 +1,29 @@
 package org.example;
 
+import java.util.*;
 
-import org.springframework.context.annotation.Lazy;
+
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
+
 
 @Component
 
 public class OrederService {
 
-    private final PaymentService paymentService;
+    private PaymentService ps;
 
-    public OrederService(PaymentService paymentService){
-        this.paymentService=paymentService;
+    public OrederService(PaymentService ps){
+        this.ps=ps;
     }
-    public void orderService(){
-        paymentService.Pay();
 
-        System.out.println("order placed");
+    public void orederService(){
+
+        ps.paymentService();
+        System.out.println("order is success");
     }
+
+
 }
