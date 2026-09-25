@@ -4,7 +4,7 @@ package org.example;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class PaymentService {
 
     public void paymentService(){
